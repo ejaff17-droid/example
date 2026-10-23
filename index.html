@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World!</h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Alam Indonesia</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef5f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #14532d, #16a085);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #14532d;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #facc15;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 25px 15px;
+        }
+
+        h2 {
+            color: #14532d;
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .wisata {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px #00000018;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .gambar {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .isi {
+            padding: 18px;
+        }
+
+        .isi h3 {
+            color: #16734b;
+            margin-bottom: 8px;
+        }
+
+        .lokasi {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #14532d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 27px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Wisata Alam Indonesia</h1>
+    <p>Jelajahi keindahan gunung, air terjun, dan pantai Nusantara</p>
+</header>
+
+<nav>
+    <a href="#gunung">Gunung</a>
+    <a href="#air-terjun">Air Terjun</a>
+    <a href="#pantai">Pantai</a>
+</nav>
+
+<div class="container">
+
+    <!-- DAFTAR GUNUNG -->
+    <section id="gunung">
+        <h2>🏔️ 4 Wisata Gunung</h2>
+
+        <div class="wisata">
+
+            <div class="card">
+                <img class="gambar"
+                src="https://i.supaimg.com/6cedd2b3-b65a-45fe-aace-56db35fac3fe/e00b6d83-9bba-4b7b-b780-ab2c1e748c79.jpg"
+                alt="Gunung Bromo">
+                <div class="isi">
+                    <h3>1. Gunung Bromo</h3>
+                    <p class="lokasi">Lokasi: Jawa Timur</p>
+                    <p>Terkenal dengan lautan pasir yang luas,
+                    kawah gunung, serta pemandangan matahari
+                    terbit yang sangat indah.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="gambar"
+                src="https://i.supaimg.com/6cedd2b3-b65a-45fe-aace-56db35fac3fe/35089b4c-780a-4dd2-be67-3b4ce204a4f4.jpg"
+                alt="Gunung Rinjani">
+                <div class="isi">
+                    <h3>2. Gunung Rinjani</h3>
+                    <p class="lokasi">Lokasi: Lombok, Nusa Tenggara Barat</p>
+                    <p>Memiliki Danau Segara Anak yang indah,
+                    pemandangan pegunungan, dan panorama alam
+                    yang memukau.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="gambar"
+                src="https://i.supaimg.com/6cedd2b3-b65a-45fe-aace-56db35fac3fe/24f7931e-63a1-45f2-a9b3-21c597a09f48.jpg"
+                alt="Gunung Semeru">
+                <div class="isi">
+                    <h3>3. Gunung Semeru</h3>
+                    <p class="lokasi">Lokasi: Jawa Timur</p>
+                    <p>Gunung tertinggi di Pulau Jawa yang
+                    memiliki lanskap pegunungan megah dan
+                    pemandangan alam yang menakjubkan.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="gambar"
+                src="https://i.supaimg.com/6cedd2b3-b65a-45fe-aace-56db35fac3fe/038e6503-b932-409c-a303-022a5d2d28fd.jpg"
+                alt="Gunung Kerinci">
+                <div class="isi">
+                    <h3>4. Gunung Kerinci</h3>
+                    <p class="lokasi">Lokasi: Jambi dan Sumatera Barat</p>
+                    <p>Gunung berapi tertinggi di Indonesia,
+                    dikelilingi hutan tropis dan kawasan alam
+                    Taman Nasional Kerinci Seblat.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DAFTAR AIR TERJUN -->
+    <section id="air-terjun">
+        <h2>💧 3 Wisata Air Terjun</h2>
+
+        <div class="wisata">
+
+            <div class="card">
+                <img class="gambar"
+                src="https://i.supaimg.com/6cedd2b3-b65a-45fe-aace-56db35fac3fe/f788521e-65a6-4957-bc89-9aad1b402478.jpg"
+                alt="Air Terjun Tumpak Sewu">
+                <div class="isi">
+                    <h3>1. Tumpak Sewu</h3>
+                    <p class="lokasi">Lokasi: Lumajang, Jawa Timur</p>
+                    <p>Air terjun berbentuk setengah lingkaran
+                    dengan banyak aliran air yang jatuh di antara
+                    tebing hijau yang megah.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="gambar"
+                src="https://i.supaimg.com/6cedd2b3-b65a-45fe-aace-56db35fac3fe/5cd096fd-7b7f-4c8f-895b-820b0d46f204.jpg"
+                alt="Air Terjun Madakaripura">
+                <div class="isi">
+                    <h3>2. Madakaripura</h3>
+                    <p class="lokasi">Lokasi: Probolinggo, Jawa Timur</p>
+                    <p>Dikelilingi tebing tinggi yang hijau.
+                    Air mengalir dari berbagai sisi sehingga
+                    menciptakan suasana sejuk dan alami.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="gambar"
+                src="https://i.supaimg.com/6cedd2b3-b65a-45fe-aace-56db35fac3fe/9e883232-49b7-4eb3-9ec2-fb4153973eda.jpg"
+                alt="Air Terjun Sipiso-piso">
+                <div class="isi">
+                    <h3>3. Sipiso-piso</h3>
+                    <p class="lokasi">Lokasi: Karo, Sumatera Utara</p>
+                    <p>Air terjun tinggi yang berada dekat Danau
+                    Toba, menyuguhkan pemandangan lembah dan
+                    perbukitan yang luar biasa.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DAFTAR PANTAI -->
+    <section id="pantai">
+        <h2>🏖️ 3 Wisata Pantai</h2>
+
+        <div class="wisata">
+
+            <div class="card">
+                <img class="gambar"
+                src="https://i.supaimg.com/6cedd2b3-b65a-45fe-aace-56db35fac3fe/4ecb5ef8-87cc-45f3-8bc6-4eebbc68b551.jpg"
+                alt="Pantai Kuta">
+                <div class="isi">
+                    <h3>1. Pantai Kuta</h3>
+                    <p class="lokasi">Lokasi: Badung, Bali</p>
+                    <p>Terkenal dengan pasir pantai yang luas,
+                    ombak untuk berselancar, dan pemandangan
+                    matahari terbenam yang indah.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="gambar"
+                src="https://i.supaimg.com/6cedd2b3-b65a-45fe-aace-56db35fac3fe/3e1c43e9-cdfc-40b1-96ef-a4b3e88b73af.jpg"
+                alt="Pantai Pink">
+                <div class="isi">
+                    <h3>2. Pantai Pink</h3>
+                    <p class="lokasi">Lokasi: Pulau Komodo, Nusa Tenggara Timur</p>
+                    <p>Memiliki pasir berwarna merah muda yang
+                    unik, air laut jernih, serta pemandangan
+                    bawah laut yang menarik.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="gambar"
+                src="https://i.supaimg.com/6cedd2b3-b65a-45fe-aace-56db35fac3fe/2d73ebca-b399-4715-9e1e-cd152f194971.jpg"
+                alt="Pantai Tanjung Tinggi">
+                <div class="isi">
+                    <h3>3. Pantai Tanjung Tinggi</h3>
+                    <p class="lokasi">Lokasi: Belitung, Kepulauan Bangka Belitung</p>
+                    <p>Dikenal dengan batu granit berukuran
+                    besar, pasir putih, dan air laut yang
+                    jernih serta menenangkan.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Wisata Alam Indonesia</p>
+    <p>Jagalah alam agar tetap indah untuk generasi mendatang.</p>
+</footer>
+
+</body>
+</html>
